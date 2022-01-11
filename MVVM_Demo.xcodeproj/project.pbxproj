@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		0B7446F7278D872E0085D516 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7446F6278D872E0085D516 /* AppDelegate.swift */; };
 		0B7446F9278D872E0085D516 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7446F8278D872E0085D516 /* SceneDelegate.swift */; };
-		0B7446FB278D872E0085D516 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7446FA278D872E0085D516 /* ViewController.swift */; };
+		0B7446FB278D872E0085D516 /* CryptosInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7446FA278D872E0085D516 /* CryptosInfoVC.swift */; };
 		0B7446FE278D872E0085D516 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7446FC278D872E0085D516 /* Main.storyboard */; };
 		0B744700278D872F0085D516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7446FF278D872F0085D516 /* Assets.xcassets */; };
 		0B744703278D872F0085D516 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B744701278D872F0085D516 /* LaunchScreen.storyboard */; };
+		0B744716278D8C130085D516 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B744715278D8C130085D516 /* DetailVC.swift */; };
+		0B744718278D8C590085D516 /* CryptoInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B744717278D8C590085D516 /* CryptoInfoModel.swift */; };
+		0B74471A278D8DC40085D516 /* DownloadCryptoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B744719278D8DC40085D516 /* DownloadCryptoJSON.swift */; };
+		0B74471C278D985A0085D516 /* CryptosInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B74471B278D985A0085D516 /* CryptosInfoViewModel.swift */; };
+		0B74471E278DA3D40085D516 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B74471D278DA3D40085D516 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B7446F3278D872E0085D516 /* MVVM_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7446F6278D872E0085D516 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B7446F8278D872E0085D516 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B7446FA278D872E0085D516 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B7446FA278D872E0085D516 /* CryptosInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptosInfoVC.swift; sourceTree = "<group>"; };
 		0B7446FD278D872E0085D516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B7446FF278D872F0085D516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B744702278D872F0085D516 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B744704278D872F0085D516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B744715278D8C130085D516 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		0B744717278D8C590085D516 /* CryptoInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoInfoModel.swift; sourceTree = "<group>"; };
+		0B744719278D8DC40085D516 /* DownloadCryptoJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCryptoJSON.swift; sourceTree = "<group>"; };
+		0B74471B278D985A0085D516 /* CryptosInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptosInfoViewModel.swift; sourceTree = "<group>"; };
+		0B74471D278DA3D40085D516 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,108 @@
 		0B7446F5278D872E0085D516 /* MVVM_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				0B7446F6278D872E0085D516 /* AppDelegate.swift */,
-				0B7446F8278D872E0085D516 /* SceneDelegate.swift */,
-				0B7446FA278D872E0085D516 /* ViewController.swift */,
-				0B7446FC278D872E0085D516 /* Main.storyboard */,
-				0B7446FF278D872F0085D516 /* Assets.xcassets */,
-				0B744701278D872F0085D516 /* LaunchScreen.storyboard */,
+				0B74470A278D874E0085D516 /* Resouces */,
+				0B74470D278D892F0085D516 /* Services */,
+				0B74470E278D89690085D516 /* Model */,
+				0B74470B278D876D0085D516 /* View */,
+				0B74470C278D891E0085D516 /* ViewModel */,
 				0B744704278D872F0085D516 /* Info.plist */,
 			);
 			path = MVVM_Demo;
+			sourceTree = "<group>";
+		};
+		0B74470A278D874E0085D516 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				0B7446F8278D872E0085D516 /* SceneDelegate.swift */,
+				0B7446F6278D872E0085D516 /* AppDelegate.swift */,
+				0B7446FF278D872F0085D516 /* Assets.xcassets */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		0B74470B278D876D0085D516 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B744701278D872F0085D516 /* LaunchScreen.storyboard */,
+				0B7446FC278D872E0085D516 /* Main.storyboard */,
+				0B74470F278D89B10085D516 /* HomePage */,
+				0B744712278D89F60085D516 /* DetailPage */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B74470C278D891E0085D516 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0B744710278D89D20085D516 /* HomePage */,
+				0B744713278D8A0C0085D516 /* DetailPage */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0B74470D278D892F0085D516 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0B744714278D8A270085D516 /* CryptoServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0B74470E278D89690085D516 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B744711278D89E50085D516 /* CryptoModels */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B74470F278D89B10085D516 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				0B7446FA278D872E0085D516 /* CryptosInfoVC.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		0B744710278D89D20085D516 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				0B74471B278D985A0085D516 /* CryptosInfoViewModel.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		0B744711278D89E50085D516 /* CryptoModels */ = {
+			isa = PBXGroup;
+			children = (
+				0B744717278D8C590085D516 /* CryptoInfoModel.swift */,
+			);
+			path = CryptoModels;
+			sourceTree = "<group>";
+		};
+		0B744712278D89F60085D516 /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				0B744715278D8C130085D516 /* DetailVC.swift */,
+			);
+			path = DetailPage;
+			sourceTree = "<group>";
+		};
+		0B744713278D8A0C0085D516 /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				0B74471D278DA3D40085D516 /* DetailViewModel.swift */,
+			);
+			path = DetailPage;
+			sourceTree = "<group>";
+		};
+		0B744714278D8A270085D516 /* CryptoServices */ = {
+			isa = PBXGroup;
+			children = (
+				0B744719278D8DC40085D516 /* DownloadCryptoJSON.swift */,
+			);
+			path = CryptoServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +241,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B7446FB278D872E0085D516 /* ViewController.swift in Sources */,
+				0B7446FB278D872E0085D516 /* CryptosInfoVC.swift in Sources */,
+				0B744718278D8C590085D516 /* CryptoInfoModel.swift in Sources */,
+				0B74471A278D8DC40085D516 /* DownloadCryptoJSON.swift in Sources */,
+				0B74471C278D985A0085D516 /* CryptosInfoViewModel.swift in Sources */,
+				0B744716278D8C130085D516 /* DetailVC.swift in Sources */,
 				0B7446F7278D872E0085D516 /* AppDelegate.swift in Sources */,
 				0B7446F9278D872E0085D516 /* SceneDelegate.swift in Sources */,
+				0B74471E278DA3D40085D516 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +414,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +442,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

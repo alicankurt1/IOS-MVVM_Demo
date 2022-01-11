@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hcc-iI-dZh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cryptos InfoVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CryptosInfoVC" customModule="MVVM_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="A4p-in-E2V">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cryptoCell" id="YOc-jK-agY">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YOc-jK-agY" id="U6v-is-nYg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A4p-in-E2V" secondAttribute="bottom" id="5VV-U6-MrF"/>
+                            <constraint firstItem="A4p-in-E2V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ibh-LS-YFC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A4p-in-E2V" secondAttribute="trailing" id="QXC-09-3zn"/>
+                            <constraint firstItem="A4p-in-E2V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UKH-Mt-JMu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xGm-AG-9Ka"/>
+                    <connections>
+                        <outlet property="cryptoTableView" destination="A4p-in-E2V" id="inX-pN-jrY"/>
+                        <segue destination="6wj-Fu-XuS" kind="show" identifier="toDetailVC" id="Jyk-z7-I0m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="97.767857142857139"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="IF5-Wf-ePm">
+            <objects>
+                <viewController id="6wj-Fu-XuS" customClass="DetailVC" customModule="MVVM_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OPe-pE-pTA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxw-Kk-KGf">
+                                <rect key="frame" x="43" y="489" width="329" height="122"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Currency Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDv-1e-lEs">
+                                <rect key="frame" x="43" y="351" width="329" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="lO2-w7-F9j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h5u-3r-kgH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bDv-1e-lEs" firstAttribute="leading" secondItem="Zxw-Kk-KGf" secondAttribute="leading" id="1Da-La-pml"/>
+                            <constraint firstItem="h5u-3r-kgH" firstAttribute="bottom" secondItem="Zxw-Kk-KGf" secondAttribute="bottom" constant="251" id="4Xb-DR-pWb"/>
+                            <constraint firstItem="bDv-1e-lEs" firstAttribute="leading" secondItem="h5u-3r-kgH" secondAttribute="leading" constant="43" id="FVe-s8-g7X"/>
+                            <constraint firstItem="bDv-1e-lEs" firstAttribute="trailing" secondItem="Zxw-Kk-KGf" secondAttribute="trailing" id="Or9-m1-xmM"/>
+                            <constraint firstItem="Zxw-Kk-KGf" firstAttribute="top" secondItem="bDv-1e-lEs" secondAttribute="bottom" constant="30" id="WRD-10-zvN"/>
+                            <constraint firstItem="bDv-1e-lEs" firstAttribute="centerX" secondItem="OPe-pE-pTA" secondAttribute="centerX" id="XG6-1R-jci"/>
+                            <constraint firstItem="bDv-1e-lEs" firstAttribute="top" secondItem="h5u-3r-kgH" secondAttribute="top" constant="263" id="fRv-Q9-tpK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fLx-2X-J06"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="bDv-1e-lEs" id="PAB-T7-SaO"/>
+                        <outlet property="priceLabel" destination="Zxw-Kk-KGf" id="pbm-Rl-3nL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ef5-qJ-fHP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1966.6666666666667" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="akU-xB-rYs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hcc-iI-dZh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vGW-7L-RH9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="md2-LV-uoE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Cd-nr-kES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
